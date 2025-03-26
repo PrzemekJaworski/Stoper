@@ -1,16 +1,20 @@
+/* 🎨 Global Styles */
 @charset "UTF-8";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* 🎨 Root Variables (Theme Colors) */
 :root {
   --first-color: rgb(250, 20, 6);
   --second-color: rgb(190, 210, 197);
   --hover-color: rgb(209, 33, 24);
 }
 
+/* 🎨 Body Styling - Centering App & Background */
 body {
   display: flex;
   justify-content: center;
@@ -21,6 +25,7 @@ body {
   background-color: #333;
 }
 
+/* 🎨 Wrapper - Main Container */
 .wrapper {
   position: relative;
   display: flex;
@@ -36,6 +41,7 @@ body {
   overflow: hidden;
 }
 
+/* 🎨 Info & Theme Icons */
 .info i {
   font-size: 24px;
   position: absolute;
@@ -58,23 +64,27 @@ body {
   color: var(--first-color);
 }
 
+/* 🎨 Stopwatch Title */
 h1 {
   margin-bottom: 20px;
   font-size: 60px;
   font-weight: lighter;
 }
 
+/* 🎨 Stopwatch Display */
 .stopwatch {
   font-size: 72px;
   color: var(--first-color);
 }
 
+/* 🎨 Last Time Display */
 .time {
   visibility: hidden;
   color: var(--second-color);
   font-size: 22px;
 }
 
+/* 🎨 Control Buttons */
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -82,6 +92,7 @@ h1 {
   margin: 30px;
 }
 
+/* 🎨 Button Styling */
 button {
   margin: 10px;
   padding: 10px 20px;
@@ -95,17 +106,20 @@ button {
   transition: background-color 0.3s;
 }
 
+/* 🎨 Special Styling for History Button */
 .history {
   flex-grow: 1;
   text-transform: uppercase;
 }
 
+/* 🎨 Button Hover Effects */
 button:hover,
 button:focus {
   background-color: var(--first-color);
   outline: none;
 }
 
+/* 🎨 History Log (Previous Times) */
 .time-list li {
   display: flex;
   justify-content: space-between;
@@ -118,6 +132,7 @@ button:focus {
   font-weight: bold;
 }
 
+/* 🎨 Modal Background */
 .modal-shadow {
   display: none;
   position: absolute;
@@ -126,6 +141,7 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+/* 🎨 Modal Window */
 .modal {
   position: absolute;
   top: 50%;
@@ -139,22 +155,26 @@ button:focus {
   color: #fff;
 }
 
+/* 🎨 Modal Title */
 .modal h3 {
   margin-bottom: 20px;
   font-size: 30px;
 }
 
+/* 🎨 Modal Instructions */
 .modal p {
   margin-bottom: 10px;
   margin-left: 20px;
   font-size: 20px;
 }
 
+/* 🎨 Highlighting Icons & Strong Text in Modal */
 .modal i,
 .modal strong {
   color: var(--first-color);
 }
 
+/* 🎨 Close Button in Modal */
 .modal .close {
   display: block;
   margin: 40px auto 0;
@@ -167,6 +187,7 @@ button:focus {
   background-color: #111;
 }
 
+/* 🎨 Modal Animation */
 .modal-animation {
   animation: show-modal 0.5s;
 }
@@ -179,7 +200,8 @@ button:focus {
     opacity: 1;
   }
 }
-/* zmiana kolorów */
+
+/* 🎨 Color Customization Panel */
 .colors {
   display: flex;
   flex-direction: column;
@@ -193,6 +215,7 @@ button:focus {
   transition: transform 0.3s;
 }
 
+/* 🎨 Individual Color Circles */
 .color {
   width: 40px;
   height: 40px;
@@ -202,23 +225,15 @@ button:focus {
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 
+/* 🎨 Show Colors Panel Animation */
 .show-colors {
   transform: translateX(-110px);
 }
 
+/* 🎨 First Color Option */
 .one {
   background-color: rgb(250, 20, 6);
   box-shadow: 0 0 8px rgb(250, 20, 6);
-}
-
-.two {
-  background-color: rgb(6, 173, 250);
-  box-shadow: 0 0 8px rgb(6, 173, 250);
-}
-
-.three {
-  background-color: rgb(0, 255, 42);
-  box-shadow: 0 0 8px rgb(0, 255, 42);
 }
 
 .one:hover {
@@ -226,12 +241,24 @@ button:focus {
   box-shadow: 0 0 16px rgb(250, 20, 6);
 }
 
+/* 🎨 Second Color Option */
+.two {
+  background-color: rgb(6, 173, 250);
+  box-shadow: 0 0 8px rgb(6, 173, 250);
+}
+
 .two:hover {
   background-color: rgb(28, 145, 199);
   box-shadow: 0 0 16px rgb(6, 173, 250);
 }
 
+/* 🎨 Third Color Option */
+.three {
+  background-color: rgb(0, 255, 42);
+  box-shadow: 0 0 8px rgb(0, 255, 42);
+}
+
 .three:hover {
   background-color: rgb(28, 209, 58);
   box-shadow: 0 0 16px rgb(0, 255, 42);
-} /*# sourceMappingURL=main.css.map */
+}
